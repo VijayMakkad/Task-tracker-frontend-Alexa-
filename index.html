@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Tracker</h1>
+        <div class="task-form">
+            <input
+                type="text"
+                placeholder="Task Name"
+                value=""
+                <!-- Add an "id" attribute for the input fields -->
+                id="taskName"
+            />
+            <input
+                type="text"
+                placeholder="Task Description"
+                value=""
+                <!-- Add an "id" attribute for the input fields -->
+                id="taskDescription"
+            />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul class="task-list">
+            <!-- Example task item for reference -->
+            <li class="task-item">
+                <input
+                    type="text"
+                    value="Example Task"
+                />
+                <input
+                    type="text"
+                    value="This is an example task."
+                />
+                <button onclick="deleteTask(1)">Delete</button>
+            </li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
